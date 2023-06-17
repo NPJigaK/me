@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next build && next export && next-image-export-optimizer --exportFolderPath images"
+    "export": "next build && next export && next-image-export-optimizer"
   },
   "dependencies": {
     "@types/node": "20.3.1",
