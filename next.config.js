@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const withExportImages = require("next-export-optimize-images");
+const nextConfig = withExportImages({
   output: "export",
-  /* config options here */
-};
+});
 
 module.exports = nextConfig;
