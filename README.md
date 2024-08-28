@@ -1,2 +1,2 @@
 # me
-https://devly.jp/
+https://devky.jp/
