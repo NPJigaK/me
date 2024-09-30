@@ -15,4 +15,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withNextra(nextConfig);
+export default withNextra(nextConfig);
