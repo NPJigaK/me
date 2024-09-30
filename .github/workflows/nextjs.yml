@@ -29,8 +29,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: aaa
-        run: rm next.config.js
       - name: Checkout
         uses: actions/checkout@v3
       - name: Detect package manager
@@ -63,6 +61,8 @@ jobs:
           #
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: next
+      - name: aaa
+        run: rm -R .next/cache
       - name: Restore cache
         uses: actions/cache@v3
         with:
