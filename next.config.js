@@ -1,4 +1,4 @@
-const withNextra = require("nextra")({
+const withNextra = import("nextra")({
   theme: "nextra-theme-blog",
   themeConfig: "./theme.config.js",
   // optional: add `unstable_staticImage: true` to enable Nextra's auto image import
