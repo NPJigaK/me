@@ -9,7 +9,7 @@
   "dependencies": {
     "gray-matter": "^4.0.3",
     "next": "latest",
-    "nextra": "^3.0.0",
+    "nextra": "^3.0.2",
     "nextra-theme-blog": "^3.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
