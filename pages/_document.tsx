@@ -1,37 +1,35 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import { supportedLocales } from "@/lib/constants";
+import { GTM_ID } from "@/lib/gtm";
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
-export default function Document() {
-  const meta = {
-    title: "Next.js Blog Starter Kit",
-    description: "Clone and deploy your own Next.js portfolio in minutes.",
-    image: "https://assets.vercel.com/image/upload/q_auto/front/vercel/dps.png",
-  };
-
+const LangSettingDocument = ({ lang, localEntry }: any) => {
   return (
-    <Html lang="en">
-      <Head>
-        <meta name="robots" content="follow, index" />
-        <meta name="description" content={meta.description} />
-        <meta property="og:site_name" content={meta.title} />
-        <meta property="og:description" content={meta.description} />
-        <meta property="og:title" content={meta.title} />
-        <meta property="og:image" content={meta.image} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@yourname" />
-        <meta name="twitter:title" content={meta.title} />
-        <meta name="twitter:description" content={meta.description} />
-        <meta name="twitter:image" content={meta.image} />
-
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7221589741291682"
-          crossOrigin="anonymous"
-        ></script>
-      </Head>
+    <Html lang={lang} translate={!localEntry ? "no" : undefined}>
+      <Head />
       <body>
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         <Main />
         <NextScript />
       </body>
     </Html>
   );
-}
+};
+
+LangSettingDocument.getInitialProps = async (ctx: any) => {
+  const initialProps = await Document.getInitialProps(ctx);
+  const { pathname } = ctx;
+  const localEntry = Object.entries(supportedLocales).find((entry) =>
+    pathname.startsWith(`/${entry[0]}`)
+  );
+  const lang = localEntry ? localEntry[1] : "en-US";
+  return { ...initialProps, lang, localEntry };
+};
+
+export default LangSettingDocument;
