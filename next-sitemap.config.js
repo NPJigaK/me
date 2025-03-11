@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://twitch-follower-checker.devkey.jp",
+  siteUrl: "https://devkey.jp",
   generateRobotsTxt: true,
   outDir: "./out",
   additionalPaths: async (config) => [
