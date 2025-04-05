@@ -1,6 +1,6 @@
 export const SITE = {
   website: "https://devkey.jp/", // replace this with your deployed domain
-  author: "Sat Naing",
+  author: "Devkey",
   profile: "https://devkey.jp/",
   desc: "engineer blog.",
   title: "DEVKEY",
@@ -12,9 +12,11 @@ export const SITE = {
   showArchives: true,
   showBackButton: true, // show back button in post detail
   editPost: {
-    url: "https://devkey.jp/temp",
+    enabled: true,
     text: "Suggest Changes",
-    appendFilePath: true,
+    url: "https://devkey.jp/temp",
   },
   dynamicOgImage: true,
+  lang: "jp", // html lang code. Set this empty and default will be "en"
+  timezone: "Asia/Tokyo", // Default global timezone (IANA format) https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 } as const;
