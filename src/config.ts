@@ -4,7 +4,7 @@ export const SITE = {
   profile: "https://devkey.jp/about/",
   desc: "engineer blog.",
   title: "DEVKEY",
-  ogImage: "devkey.jpg",
+  ogImage: "devkey-og.jpeg",
   lightAndDarkMode: true,
   postPerIndex: 4,
   postPerPage: 4,
