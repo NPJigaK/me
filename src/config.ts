@@ -1,10 +1,10 @@
 export const SITE = {
   website: "https://devkey.jp/", // replace this with your deployed domain
   author: "Devkey",
-  profile: "https://devkey.jp/",
+  profile: "https://devkey.jp/about/",
   desc: "engineer blog.",
   title: "DEVKEY",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "devkey.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
   postPerPage: 4,
