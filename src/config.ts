@@ -14,7 +14,7 @@ export const SITE = {
   editPost: {
     enabled: true,
     text: "Suggest Changes",
-    url: "https://devkey.jp/temp",
+    url: "https://github.com/NPJigaK/me/edit/ads/",
   },
   dynamicOgImage: true,
   lang: "jp", // html lang code. Set this empty and default will be "en"
