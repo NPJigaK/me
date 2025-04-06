@@ -1,10 +1,10 @@
 ---
-author: Sat Naing
+author: Devkey
 pubDatetime: 2023-01-21T15:57:52.737Z
 title: AWS Certified Data Analytics - Specialty（DAS-C01）合格体験記
 slug: aws-5
 featured: false
-ogImage: ../../../../assets/images/AWS.JPG
+ogImage: ../../../../assets/images/blog/2021/AWS.JPG
 tags:
   - AWS
   - 資格取得
@@ -13,7 +13,7 @@ description: AWS Certified Data Analytics - Specialty（DAS-C01）試験に合�
 
 AWS Certified Data Analytics - Specialty（DAS-C01）試験に合格しましたので、その体験をシェアします。
 
-![AWS](@/assets/images/AWS.JPG)
+![AWS](@/assets/images/blog/2021/AWS.JPG)
 
 ## Table of contents
 

@@ -12,7 +12,8 @@
   tfoot td:first-child {
     padding-inline-start: 0.5714286em !important;
   }
-  .prose h2#table-of-contents {
+  /*.prose h2#table-of-contents {*/
+  .prose h2#目次 {
     @apply mb-2;
   }
   .prose details {
@@ -21,7 +22,8 @@
   .prose summary {
     @apply focus-visible:no-underline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-accent focus-visible:outline-dashed;
   }
-  .prose h2#table-of-contents + p {
+  /*.prose h2#table-of-contents + p {*/
+  .prose h2#目次 + p {
     @apply hidden;
   }
 

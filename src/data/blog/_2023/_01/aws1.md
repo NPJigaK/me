@@ -1,10 +1,10 @@
 ---
-author: Sat Naing
+author: Devkey
 pubDatetime: 2023-01-30T15:57:52.737Z
 title: AWS Certified Solutions Architect - Associate (SAA-C03) 合格体験記
 slug: aws-1
 featured: false
-ogImage: ../../../../assets/images/AWS.JPG
+ogImage: ../../../../assets/images/blog/2021/AWS.JPG
 tags:
   - AWS
   - 資格取得
@@ -14,7 +14,7 @@ description: AWSの資格試験に合格しました。GWの思い出として�
 AWSの資格試験に合格しました。GWの思い出として、当時の振り返りと、やったこと、反省点兼ねて書き残してみます。
 生成AIとかも使ってみた振り返りも。
 
-![AWS](@/assets/images/AWS.JPG)
+![AWS](@/assets/images/blog/2021/AWS.JPG)
 
 ## Table of contents
 
