@@ -12,7 +12,7 @@ tags:
 description: 銀軸キーボードの魅力を最大限に引き出すカスタマイズ方法をご紹介。入力の速さを活かしつつ、デメリットを解決する方法を解説します。
 ---
 
-> [!note] **この記事は [`steins.gg`](https://x.com/search?q=steins.gg&src=typeahead_click&f=live) から移行した記事です。**
+> [!note] **この記事は [`steins.gg`](https://x.com/search?q=(steinsgg%20OR%20steins.gg%20OR%20%40SteinsGG)%20until%3A2021-01-01&f=live&src=typed_query) から移行した記事です。**
 >
 > `.gg` ドメインの維持費が高いため `steins.gg` は閉鎖しました。
 

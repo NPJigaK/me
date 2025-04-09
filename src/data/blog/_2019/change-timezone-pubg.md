@@ -11,7 +11,7 @@ tags:
 description: PUBGで8×8マップを遊びたいのにマッチしない？そんなときは、サーバーリージョンを変更してみよう。1クリックで切り替えられる便利な方法を紹介します。
 ---
 
-> [!note] **この記事は [`steins.gg`](https://x.com/search?q=steins.gg&src=typeahead_click&f=live) から移行した記事です。** 
+> [!note] **この記事は [`steins.gg`](https://x.com/search?q=(steinsgg%20OR%20steins.gg%20OR%20%40SteinsGG)%20until%3A2021-01-01&f=live&src=typed_query) から移行した記事です。** 
 > 
 > `.gg` ドメインの維持費が高いため `steins.gg` は閉鎖しました。 
 
