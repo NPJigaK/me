@@ -27,7 +27,7 @@ importers:
         specifier: ^5.5.2
         version: 5.6.1(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.39.0)(typescript@5.8.3)(yaml@2.7.1)
       astro-static-link-preview:
-        specifier: 1.0.0
+        specifier: ^1.0.0
         version: 1.0.0
       dayjs:
         specifier: ^1.11.13
