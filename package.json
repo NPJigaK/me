@@ -13,11 +13,13 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@astrojs/mdx": "^4.2.5",
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.2.1",
     "@resvg/resvg-js": "^2.6.2",
     "@tailwindcss/vite": "^4.0.14",
     "astro": "^5.5.2",
+    "astro-static-link-preview": "^1.0.0",
     "dayjs": "^1.11.13",
     "lodash.kebabcase": "^4.1.1",
     "rehype-callouts": "^2.0.2",
