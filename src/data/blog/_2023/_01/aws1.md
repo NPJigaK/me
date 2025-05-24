@@ -8,6 +8,7 @@ ogImage: ../../../../assets/images/blog/2021/AWS.JPG
 tags:
   - AWS
   - 資格取得
+category: AWS
 description: AWSの資格試験に合格しました。GWの思い出として、当時の振り返りと、やったこと、反省点兼ねて書き残してみます。生成AIとかも使ってみた振り返りも。
 ---
 
