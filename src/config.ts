@@ -12,9 +12,9 @@ export const SITE = {
   showArchives: true,
   showBackButton: true, // show back button in post detail
   editPost: {
-    enabled: true,
+    enabled: false,
     text: "Suggest Changes",
-    url: "https://github.com/NPJigaK/me/edit/ads/",
+    url: "not used",
   },
   dynamicOgImage: true,
   lang: "jp", // html lang code. Set this empty and default will be "en"
