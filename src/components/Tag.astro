@@ -5,9 +5,10 @@ export interface Props {
   tag: string;
   tagName: string;
   size?: "sm" | "lg";
+  count?: number;
 }
 
-const { tag, tagName, size = "sm" } = Astro.props;
+const { tag, tagName, size = "sm", count } = Astro.props;
 ---
 
 <li
@@ -32,5 +33,6 @@ const { tag, tagName, size = "sm" } = Astro.props;
       ]}
     />
     &nbsp;<span>{tagName}</span>
+    {typeof count === "number" && <sup class="text-xs">{count}</sup>}
   </a>
 </li>
