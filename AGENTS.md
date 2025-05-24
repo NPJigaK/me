@@ -18,7 +18,7 @@ This guide explains how AI coding agents can safely contribute to this Astro blo
 - Ensure new code is maintainable and visually consistent
 
 ## Development Workflow
-1. Create a new branch from `ads` with a clear English name (e.g., `add-dark-mode-toggle`).
+1. Create a new branch from `ads` with a clear English name (e.g., `codex/add-dark-mode-toggle`).
 2. Use descriptive commit messages in English.
 3. Before opening a PR, run `pnpm format`, `pnpm lint`, and `pnpm build` to check for errors.
 4. Open a pull request against `ads` with a concise title and description in English.
