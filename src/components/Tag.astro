@@ -4,10 +4,11 @@ import IconHash from "@/assets/icons/IconHash.svg";
 export interface Props {
   tag: string;
   tagName: string;
+  count?: number;
   size?: "sm" | "lg";
 }
 
-const { tag, tagName, size = "sm" } = Astro.props;
+const { tag, tagName, count, size = "sm" } = Astro.props;
 ---
 
 <li
@@ -31,6 +32,9 @@ const { tag, tagName, size = "sm" } = Astro.props;
         { "-mr-5 size-6": size === "lg" },
       ]}
     />
-    &nbsp;<span>{tagName}</span>
+    &nbsp;<span>
+      {tagName}
+      {count !== undefined && ` (${count})`}
+    </span>
   </a>
 </li>
