@@ -64,12 +64,16 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
           </div>
         )
       }
-    </section>
 
-    <SearchForm />
+    </section>
 
     <Hr />
 
+    <section>    
+      <p class="pt-12">
+        <SearchForm />
+      </p>
+    </section>
     {
       featuredPosts.length > 0 && (
         <>
