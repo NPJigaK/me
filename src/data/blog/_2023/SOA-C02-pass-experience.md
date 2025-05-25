@@ -1,21 +1,21 @@
 ---
 author: Devkey
-pubDatetime: 2023-01-21T15:57:52.737Z
-title: AWS Certified Machine Learning - Specialty（MLS-C01）合格体験記
-slug: aws-4
+pubDatetime: 2023-10-02T15:57:52.737Z
+title: AWS Certified SysOps Administrator - Associate（SOA-C02）合格体験記
+slug: SOA-C02-pass-experience
 featured: false
-ogImage: ../../../../assets/images/blog/2021/AWS.JPG
+ogImage: ../../../assets/images/blog/2021/AWS.JPG
 tags:
   - AWS
   - 資格取得
-description: この度、AWS Certified Machine Learning - Specialty（MLS-C01）試験に無事合格できましたので、その体験を共有します。
+description: この度、AWS Certified SysOps Administrator - Associate（SOA-C02）試験に無事合格できましたので、その体験を共有します。
 ---
 
 この度、AWS Certified Machine Learning - Specialty（MLS-C01）試験に無事合格できましたので、その体験を共有します。
 
 ![AWS](@/assets/images/blog/2021/AWS.JPG)
 
-## Table of contents
+## 目次
 
 ## AWS Certified Machine Learning - Specialtyとは？
 

@@ -1,21 +1,21 @@
 ---
 author: Devkey
-pubDatetime: 2023-01-21T15:57:52.737Z
-title: AWS Certified Database - Specialty（DBS-C01）合格体験記
-slug: aws-3
+pubDatetime: 2025-03-24T15:57:52.737Z
+title: AWS Certified DevOps Engineer - Professional（DOP-C02）合格体験記
+slug: DOP-C02-pass-experience
 featured: false
-ogImage: ../../../../assets/images/blog/2021/AWS.JPG
+ogImage: ../../../assets/images/blog/2021/AWS.JPG
 tags:
   - AWS
   - 資格取得
-description: この度、AWS Certified Database - Specialty（DBS-C01）試験に無事合格できましたので、その体験をシェアします。
+description: この度、AWS Certified DevOps Engineer - Professional（DOP-C02）試験に無事合格できましたので、その体験をシェアします。
 ---
 
 この度、AWS Certified Database - Specialty（DBS-C01）試験に無事合格できましたので、その体験をシェアします。
 
 ![AWS](@/assets/images/blog/2021/AWS.JPG)
 
-## Table of contents
+## 目次
 
 ## AWS Certified Database - Specialtyとは？
 
