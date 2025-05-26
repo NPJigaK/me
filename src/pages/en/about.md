@@ -1,13 +1,13 @@
 ---
 layout: ../layouts/AboutLayout.astro
 title: "About"
-lang: jp
+lang: en
 ---
 
-こんにちは！フルリモートで働くエンジニアです。
-このブログでは、在宅ワークをもっと快適に効率よくするための便利な情報や、趣味で触れているゲーム関連の技術について発信しています。
+Hello! I'm a fully remote engineer.
+This blog shares tips for working from home and some gaming related tech notes.
 
-自宅でも快適に働ける環境づくり、在宅ワークならではの課題や工夫、そしてゲームを快適にプレイするための技術的な気づきなど、参考になれば嬉しいです。
+I hope you find something useful here.
 
 ゆるく、でも時にはマニアックに。
 そんなスタンスで更新していきますので、気になる記事があればぜひチェックしてみてください！

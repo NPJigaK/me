@@ -6,9 +6,10 @@ import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import { SITE } from "@/config";
 
-const lang = "jp";
 const backUrl = SITE.showBackButton ? `${Astro.url.pathname}` : "/";
 ---
+
+const lang = "en";
 
 <Layout title={`Search | ${SITE.title}`} lang={lang}>
   <Header />

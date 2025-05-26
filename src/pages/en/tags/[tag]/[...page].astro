@@ -7,39 +7,40 @@ import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import Card from "@/components/Card.astro";
 import Pagination from "@/components/Pagination.astro";
-import getUniqueCategories from "@/utils/getUniqueCategories";
-import getPostsByCategory from "@/utils/getPostsByCategory";
+import getUniqueTags from "@/utils/getUniqueTags";
+import getPostsByTag from "@/utils/getPostsByTag";
 import { SITE } from "@/config";
 
-const lang = "jp";
+const lang = "en";
+
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
   const posts = await getCollection("blog", ({ data }) => (data.lang ?? SITE.lang) === lang);
-  const categories = getUniqueCategories(posts);
+  const tags = getUniqueTags(posts);
 
-  return categories.flatMap(({ category, categoryName }) => {
-    const categoryPosts = getPostsByCategory(posts, category);
+  return tags.flatMap(({ tag, tagName }) => {
+    const tagPosts = getPostsByTag(posts, tag);
 
-    return paginate(categoryPosts, {
-      params: { category },
-      props: { categoryName },
+    return paginate(tagPosts, {
+      params: { tag },
+      props: { tagName },
       pageSize: SITE.postPerPage,
     });
   });
 }
 
 const params = Astro.params;
-const { category } = params;
-const { page, categoryName } = Astro.props;
+const { tag } = params;
+const { page, tagName } = Astro.props;
 ---
 
-<Layout title={`Category: ${categoryName} | ${SITE.title}`} lang={lang}>
+<Layout title={`Tag: ${tagName} | ${SITE.title}`} lang={lang}>
   <Header />
   <Main
-    pageTitle={[`Category:`, `${categoryName}`]}
-    titleTransition={category}
-    pageDesc={`All the articles in the category "${categoryName}".`}
+    pageTitle={[`Tag:`, `${tagName}`]}
+    titleTransition={tag}
+    pageDesc={`All the articles with the tag "${tagName}".`}
   >
-    <h1 slot="title" transition:name={category}>{`Category:${category}`}</h1>
+    <h1 slot="title" transition:name={tag}>{`Tag:${tag}`}</h1>
     <ul>
       {page.data.map(data => <Card {...data} />)}
     </ul>

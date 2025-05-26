@@ -3,6 +3,7 @@ author: Devkey
 pubDatetime: 2024-08-26T19:03:02.737Z
 title: 【Deadlock】日本語設定ファイルの作成方法
 slug: localizing-deadlock-into-japanese
+lang: jp
 featured: false
 ogImage: ../../../assets/images/blog/2021/AWS.JPG
 tags:

@@ -11,7 +11,8 @@ import getUniqueCategories from "@/utils/getUniqueCategories";
 import getPostsByCategory from "@/utils/getPostsByCategory";
 import { SITE } from "@/config";
 
-const lang = "jp";
+const lang = "en";
+
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
   const posts = await getCollection("blog", ({ data }) => (data.lang ?? SITE.lang) === lang);
   const categories = getUniqueCategories(posts);

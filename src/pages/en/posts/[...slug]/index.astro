@@ -9,7 +9,8 @@ export interface Props {
   post: CollectionEntry<"blog">;
 }
 
-const lang = "jp";
+const lang = "en";
+
 export async function getStaticPaths() {
   const posts = await getCollection(
     "blog",

@@ -3,6 +3,7 @@ author: Devkey
 pubDatetime: 2022-09-29T15:57:52.737Z
 title: AWS Certified Solutions Architect - Associate (SAA-C03) 合格体験記
 slug: SAA-C03-pass-experience
+lang: jp
 featured: false
 ogImage: ../../../assets/images/blog/2021/AWS.JPG
 tags:

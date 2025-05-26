@@ -3,6 +3,7 @@ author: Devkey
 pubDatetime: 2021-12-29T18:51:13.737Z
 title: 【Chrome Extension】111
 slug: how-to-register-chrome-extension
+lang: jp
 featured: false
 ogImage: ../../../assets/images/blog/2019/tokyo-beijing.jpg
 tags:

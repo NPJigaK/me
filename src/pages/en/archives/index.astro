@@ -13,7 +13,7 @@ if (!SITE.showArchives) {
   return Astro.redirect("/404");
 }
 
-const lang = "jp";
+const lang = "en";
 const posts = await getCollection(
   "blog",
   ({ data }) => !data.draft && (data.lang ?? SITE.lang) === lang

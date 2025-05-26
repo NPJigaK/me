@@ -122,6 +122,12 @@ const isActive = (path: string) => {
               <span class="sr-only">Search</span>
             </LinkButton>
           </li>
+          <li class="col-span-2 flex items-center justify-center">
+            <select id="lang-select" class="border rounded px-2 py-1 text-sm">
+              <option value="jp">JP</option>
+              <option value="en">EN</option>
+            </select>
+          </li>
           {
             SITE.lightAndDarkMode && (
               <li class="col-span-1 flex items-center justify-center">
@@ -170,4 +176,16 @@ const isActive = (path: string) => {
 
   // Runs on view transitions navigation
   document.addEventListener("astro:after-swap", toggleNav);
+
+  const langSelect = document.querySelector("#lang-select");
+  if (langSelect) {
+    const currentLang = window.location.pathname.startsWith("/en") ? "en" : "jp";
+    langSelect.value = currentLang;
+    langSelect.addEventListener("change", e => {
+      const lang = (e.target as HTMLSelectElement).value;
+      let path = window.location.pathname.replace(/^\/en/, "");
+      if (lang === "en") path = "/en" + path;
+      window.location.pathname = path;
+    });
+  }
 </script>

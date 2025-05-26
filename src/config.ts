@@ -17,6 +17,7 @@ export const SITE = {
     url: "not used",
   },
   dynamicOgImage: true,
-  lang: "jp", // html lang code. Set this empty and default will be "en"
+  lang: "jp", // default language
+  languages: ["jp", "en"],
   timezone: "Asia/Tokyo", // Default global timezone (IANA format) https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 } as const;

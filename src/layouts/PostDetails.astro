@@ -65,6 +65,7 @@ const layoutProps = {
   canonicalURL,
   ogImage,
   scrollSmooth: true,
+  lang: post.data.lang ?? SITE.lang,
 };
 
 /* ========== Prev/Next Posts ========== */
@@ -91,6 +92,7 @@ const nextPost =
       { "mt-8": !SITE.showBackButton },
     ]}
     data-pagefind-body
+    data-pagefind-filter={`lang:${post.data.lang ?? SITE.lang}`}
   >
     <h1
       transition:name={slugifyStr(title)}

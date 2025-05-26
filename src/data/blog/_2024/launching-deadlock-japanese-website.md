@@ -3,6 +3,7 @@ author: Devkey
 pubDatetime: 2024-08-28T19:03:02.737Z
 title: 【Deadlock】日本語化ファイルを公開しました。
 slug: launching-deadlock-japanese-website
+lang: jp
 featured: false
 ogImage: ../../../assets/images/blog/2021/AWS.JPG
 tags:

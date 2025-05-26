@@ -13,7 +13,7 @@ import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
 import { SITE } from "@/config";
 import { SOCIALS } from "@/constants";
 
-const lang = "jp";
+const lang = "en";
 const posts = await getCollection("blog", ({ data }) => (data.lang ?? SITE.lang) === lang);
 
 const sortedPosts = getSortedPosts(posts);
@@ -44,16 +44,16 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       </a>
 
       <p>
-        ようこそDevkeyへ！Devkeyはプログラミングに関係するブログです！
+        Welcome to Devkey! This blog covers programming topics.
       </p>
       <p class="mt-2">
-        ブログのポストを見るか
+        Check out the posts or see the
         <LinkButton
           class="underline decoration-dashed underline-offset-4 hover:text-accent"
           href="https://github.com/NPJigaK/me#readme"
         >
           README
-        </LinkButton> を見てください。
+        </LinkButton>.
       </p>
       {
         // only display if at least one social link is enabled
@@ -72,7 +72,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       featuredPosts.length > 0 && (
         <>
           <section id="featured" class="pt-12 pb-6">
-            <h2 class="text-2xl font-semibold tracking-wide">特集</h2>
+            <h2 class="text-2xl font-semibold tracking-wide">Featured</h2>
             <ul>
               {featuredPosts.map(data => (
                 <Card variant="h3" {...data} />
@@ -87,7 +87,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
     {
       recentPosts.length > 0 && (
         <section id="recent-posts" class="pt-12 pb-6">
-          <h2 class="text-2xl font-semibold tracking-wide">最近の投稿</h2>
+          <h2 class="text-2xl font-semibold tracking-wide">Recent Posts</h2>
           <ul>
             {recentPosts.map(
               (data, index) =>
@@ -99,8 +99,8 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
     }
 
     <div class="my-8 text-center">
-      <LinkButton href="/posts/">
-        全ての記事
+      <LinkButton href="/en/posts/">
+        All posts
         <IconArrowRight class="inline-block" />
       </LinkButton>
     </div>

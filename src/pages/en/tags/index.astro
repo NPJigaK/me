@@ -8,7 +8,7 @@ import Footer from "@/components/Footer.astro";
 import getUniqueTags from "@/utils/getUniqueTags";
 import { SITE } from "@/config";
 
-const lang = "jp";
+const lang = "en";
 const posts = await getCollection("blog", ({ data }) => (data.lang ?? SITE.lang) === lang);
 
 let tags = getUniqueTags(posts);

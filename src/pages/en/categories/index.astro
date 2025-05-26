@@ -8,7 +8,7 @@ import Footer from "@/components/Footer.astro";
 import getUniqueCategories from "@/utils/getUniqueCategories";
 import { SITE } from "@/config";
 
-const lang = "jp";
+const lang = "en";
 const posts = await getCollection("blog", ({ data }) => (data.lang ?? SITE.lang) === lang);
 
 const categories = getUniqueCategories(posts);
