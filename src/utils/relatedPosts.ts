@@ -1,5 +1,6 @@
 import type { CollectionEntry } from "astro:content";
-import { TfIdf, TokenizerJa } from "natural";
+import natural from "natural";
+const { TfIdf, TokenizerJa } = natural;
 import { getPath } from "./getPath";
 
 export interface RelatedPost {
