@@ -12,7 +12,8 @@ export interface RelatedPost {
 const tfidf = new TfIdf();
 // TokenizerJa uses TinySegmenter under the hood for Japanese text
 // This works reasonably well for both Japanese and English text.
-tfidf.tokenizer = new TokenizerJa();
+// natural's TfIdf exposes setTokenizer for custom tokenization
+tfidf.setTokenizer(new TokenizerJa());
 
 let built = false;
 let cache: CollectionEntry<"blog">[] = [];
