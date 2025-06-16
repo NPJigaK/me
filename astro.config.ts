@@ -17,6 +17,18 @@ import mdx from "@astrojs/mdx";
 // https://astro.build/config
 export default defineConfig({
   site: SITE.website,
+  i18n: {
+    locales: ["ja", "en"],
+    defaultLocale: "ja",
+    fallback: {
+      en: "ja",
+    },
+    routing: {
+      prefixDefaultLocale: false,
+      fallbackType: "redirect",
+      redirectToDefaultLocale: false,
+    },
+  },
   integrations: [
     mdx(),
     sitemap({
