@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro check && astro build && pagefind --site dist && cp -r dist/pagefind public/",
+    "gen:related": "node scripts/gen-related.mjs",
+    "prebuild": "pnpm run gen:related",
     "preview": "astro preview",
     "sync": "astro sync",
     "astro": "astro",
