@@ -1,0 +1,35 @@
+---
+import type { CollectionEntry } from "astro:content";
+import Card from "./Card.astro";
+import related from "@/generated/related.json";
+
+export interface Props {
+  post: CollectionEntry<"blog">;
+  posts: CollectionEntry<"blog">[];
+}
+
+const { post, posts } = Astro.props;
+const slug = post.data.slug;
+const isJa = /[\u3040-\u30FF\u4E00-\u9FFF]/;
+const lang = isJa.test(post.data.title) ? "ja" : "en";
+const slugs: string[] = related[slug] || [];
+const items = slugs
+  .map(s => posts.find(p => p.data.slug === s))
+  .filter((p): p is CollectionEntry<"blog"> => !!p)
+  .filter(p =>
+    lang === "ja" ? isJa.test(p.data.title) : !isJa.test(p.data.title)
+  );
+---
+
+{
+  items.length > 0 && (
+    <section class="my-8">
+      <h2 class="mb-4 text-xl font-bold">Related Posts</h2>
+      <ul>
+        {items.map(item => (
+          <Card variant="h3" {...item} />
+        ))}
+      </ul>
+    </section>
+  )
+}
