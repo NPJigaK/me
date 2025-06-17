@@ -1,0 +1,33 @@
+---
+import type { CollectionEntry } from "astro:content";
+import Card from "@/components/Card.astro";
+import related from "@/generated/related.json" assert { type: "json" };
+
+export interface Props {
+  slug: string;
+  posts: CollectionEntry<"blog">[];
+}
+
+interface BlogEntry extends CollectionEntry<"blog"> {
+  slug: string;
+}
+
+const { slug, posts } = Astro.props;
+const relatedData = related as Record<string, string[]>;
+const relatedSlugs: string[] = relatedData[slug] || [];
+const postMap = new Map((posts as BlogEntry[]).map(p => [p.slug, p]));
+const items = relatedSlugs.map(s => postMap.get(s)).filter(Boolean);
+---
+
+{
+  items.length > 0 && (
+    <section class="my-8">
+      <h2 class="mb-4 text-xl font-bold">Related Posts</h2>
+      <ul>
+        {items.map(post => (
+          <Card {...post!} variant="h3" />
+        ))}
+      </ul>
+    </section>
+  )
+}

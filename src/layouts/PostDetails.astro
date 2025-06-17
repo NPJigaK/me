@@ -10,6 +10,7 @@ import EditPost from "@/components/EditPost.astro";
 import ShareLinks from "@/components/ShareLinks.astro";
 import BackButton from "@/components/BackButton.astro";
 import BackToTopButton from "@/components/BackToTopButton.astro";
+import RelatedPosts from "@/components/RelatedPosts.astro";
 import { getPath } from "@/utils/getPath";
 import { slugifyStr } from "@/utils/slugify";
 import IconChevronLeft from "@/assets/icons/IconChevronLeft.svg";
@@ -37,6 +38,7 @@ const {
 } = post.data;
 
 const { Content } = await render(post);
+const slug = (post as any).slug ?? post.id.split('/').pop();
 
 let ogImageUrl: string | undefined;
 
@@ -116,15 +118,22 @@ const nextPost =
     <EditPost class="sm:hidden" {hideEditPost} {post} />
 
     <ul class="mt-4 mb-8 sm:my-8">
-      {post.data.category && (
-        <Category category={slugifyStr(post.data.category)} categoryName={post.data.category} />
-      )}
+      {
+        post.data.category && (
+          <Category
+            category={slugifyStr(post.data.category)}
+            categoryName={post.data.category}
+          />
+        )
+      }
       {tags.map(tag => <Tag tag={slugifyStr(tag)} tagName={tag} />)}
     </ul>
 
     <BackToTopButton />
 
     <ShareLinks />
+
+    <RelatedPosts slug={slug} posts={posts} />
 
     <hr class="my-6 border-dashed" />
 
