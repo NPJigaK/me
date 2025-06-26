@@ -7,6 +7,7 @@ import Socials from "@/components/Socials.astro";
 import LinkButton from "@/components/LinkButton.astro";
 import Card from "@/components/Card.astro";
 import Hr from "@/components/Hr.astro";
+import AdSense from "@/components/AdSense.astro";
 import getSortedPosts from "@/utils/getSortedPosts";
 import IconRss from "@/assets/icons/IconRss.svg";
 import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
@@ -42,9 +43,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         <span class="sr-only">RSS Feed</span>
       </a>
 
-      <p>
-        ようこそDevkeyへ！Devkeyはプログラミングに関係するブログです！
-      </p>
+      <p>ようこそDevkeyへ！Devkeyはプログラミングに関係するブログです！</p>
       <p class="mt-2">
         ブログのポストを見るか
         <LinkButton
@@ -64,6 +63,8 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         )
       }
     </section>
+
+    <AdSense />
 
     <Hr />
 

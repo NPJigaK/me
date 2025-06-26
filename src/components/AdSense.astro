@@ -1,0 +1,24 @@
+---
+import {
+  PUBLIC_GOOGLE_ADSENSE_CLIENT,
+  PUBLIC_GOOGLE_ADSENSE_SLOT,
+} from "astro:env/client";
+---
+
+{
+  PUBLIC_GOOGLE_ADSENSE_CLIENT && PUBLIC_GOOGLE_ADSENSE_SLOT && (
+    <>
+      <ins
+        class="adsbygoogle"
+        style="display:block"
+        data-ad-client={PUBLIC_GOOGLE_ADSENSE_CLIENT}
+        data-ad-slot={PUBLIC_GOOGLE_ADSENSE_SLOT}
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      />
+      <script is:inline>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </>
+  )
+}

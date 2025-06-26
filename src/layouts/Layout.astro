@@ -1,6 +1,9 @@
 ---
 import { ClientRouter } from "astro:transitions";
-import { PUBLIC_GOOGLE_SITE_VERIFICATION } from "astro:env/client";
+import {
+  PUBLIC_GOOGLE_SITE_VERIFICATION,
+  PUBLIC_GOOGLE_ADSENSE_CLIENT,
+} from "astro:env/client";
 import { SITE } from "@/config";
 import "@/styles/global.css";
 
@@ -124,6 +127,17 @@ const structuredData = {
         <meta
           name="google-site-verification"
           content={PUBLIC_GOOGLE_SITE_VERIFICATION}
+        />
+      )
+    }
+
+    {
+      // If PUBLIC_GOOGLE_ADSENSE_CLIENT is set, load Google AdSense script
+      PUBLIC_GOOGLE_ADSENSE_CLIENT && (
+        <script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${PUBLIC_GOOGLE_ADSENSE_CLIENT}`}
+          crossorigin="anonymous"
         />
       )
     }
