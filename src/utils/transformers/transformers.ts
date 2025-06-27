@@ -87,8 +87,10 @@ async function processFile(filePath: string): Promise<Document | null> {
     const { content, data } = matter(fs.readFileSync(filePath, "utf-8"));
     if (!data.slug || data.draft) return null;
     const plain = await getPlainText(content);
+    const absPath = path.resolve(filePath);
+    const relPath = path.relative(process.cwd(), absPath);
     return {
-      path: toPosix(path.relative(process.cwd(), filePath)),
+      path: toPosix(relPath),
       content: plain,
       frontmatter: data as Frontmatter,
     };
