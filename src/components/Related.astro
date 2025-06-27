@@ -1,9 +1,27 @@
 ---
 import Tag from "./Tag.astro";
-import Datetime from "./Datetime.astro";
 import { slugifyStr } from "@/utils/slugify";
-import { SITE } from "@/config";
 import rawSimilarities from "../assets/similarities.json";
+import path from "node:path";
+
+const imageMap = import.meta.glob("../assets/images/**/*", {
+  eager: true,
+  as: "url",
+});
+
+function resolveImage(post: RelatedPost) {
+  if (!post.ogImage) {
+    return `/posts/${post.slug}/index.png`;
+  }
+  const absolute = path.posix.normalize(
+    path.posix.join(path.posix.dirname(post.path), post.ogImage)
+  );
+  const relative = path.posix.relative("src/components", absolute);
+  return (
+    (imageMap["../" + relative] as string | undefined) ||
+    `/posts/${post.slug}/index.png`
+  );
+}
 
 interface RelatedPost {
   author: string;
@@ -51,7 +69,7 @@ const related = items.slice(0, maxItems);
                     </ul>
                   )}
                   <img
-                    src={post.ogImage}
+                    src={resolveImage(post)}
                     alt={post.title}
                     class="aspect-video w-full object-cover"
                     loading="lazy"
