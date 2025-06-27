@@ -1,5 +1,71 @@
 ---
-import similarities from '../assets/similarities.json';
+import Tag from "./Tag.astro";
+import Datetime from "./Datetime.astro";
+import { slugifyStr } from "@/utils/slugify";
+import { SITE } from "@/config";
+import rawSimilarities from "../assets/similarities.json";
 
+interface RelatedPost {
+  author: string;
+  pubDatetime: string;
+  title: string;
+  slug: string;
+  featured: boolean;
+  ogImage: string;
+  tags: string[];
+  description: string;
+  path: string;
+  similarity: number;
+}
 
+const similarities = rawSimilarities as Record<string, RelatedPost[]>;
+
+export interface Props {
+  filePath: string | undefined;
+  maxItems?: number;
+}
+
+const { filePath, maxItems = 5 } = Astro.props;
+const normalized = filePath?.replace(/\\/g, "/");
+const items = (normalized && similarities[normalized]) || [];
+const related = items.slice(0, maxItems);
 ---
+
+{
+  related.length > 0 && (
+    <section class="my-8" aria-labelledby="related-title">
+      <h2 id="related-title" class="text-2xl font-semibold tracking-wide">
+        Related Posts
+      </h2>
+      <ul>
+        {related.map(post => (
+          <li class="my-6">
+            <a
+              href={`/posts/${post.slug}/`}
+              class="inline-block text-lg font-medium text-accent decoration-dashed underline-offset-4 hover:underline focus-visible:no-underline focus-visible:underline-offset-0"
+            >
+              <h3 class="text-lg font-medium decoration-dashed hover:underline">
+                {post.title}
+              </h3>
+            </a>
+            <div class="flex items-center gap-2">
+              <Datetime
+                pubDatetime={new Date(post.pubDatetime)}
+                modDatetime={null}
+                timezone={SITE.timezone}
+              />
+            </div>
+            <p>{post.description}</p>
+            {post.tags && post.tags.length > 0 && (
+              <ul class="mt-2 flex flex-wrap gap-1">
+                {post.tags.map((tag: string) => (
+                  <Tag tag={slugifyStr(tag)} tagName={tag} size="sm" />
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
+    </section>
+  )
+}
