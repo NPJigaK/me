@@ -680,18 +680,18 @@
     },
     {
       "author": "Devkey",
-      "pubDatetime": "2024-08-28T19:03:02.737Z",
-      "title": "【Deadlock】日本語化ファイルを公開しました。",
-      "slug": "launching-deadlock-japanese-website",
+      "pubDatetime": "2019-12-29T18:51:13.737Z",
+      "title": "【PUBG】タイムゾーンを1クリックで変更させる方法【東京⇔北京】",
       "featured": false,
-      "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
+      "ogImage": "../../../../assets/images/blog/2019/tokyo-beijing.jpg",
       "tags": [
-        "AWS",
-        "資格取得"
+        "PUBG",
+        "ゲームライフハック"
       ],
-      "description": "AWSの資格試験に合格しました。GWの思い出として、当時の振り返りと、やったこと、反省点兼ねて書き残してみます。生成AIとかも使ってみた振り返りも。",
-      "path": "src/data/blog/_2024/launching-deadlock-japanese-website.md",
-      "similarity": 0.3
+      "description": "PUBGで8×8マップを遊びたいのにマッチしない？そんなときは、サーバーリージョンを変更してみよう。1クリックで切り替えられる便利な方法を紹介します。",
+      "slug": "change-timezone-pubg",
+      "path": "src/data/blog/_2019/en/change-timezone-pubg.md",
+      "similarity": 0.32
     }
   ],
   "src/data/blog/_2021/how-to-register-chrome-extension.md": [
@@ -806,6 +806,21 @@
     },
     {
       "author": "Devkey",
+      "pubDatetime": "2019-12-29T18:51:13.737Z",
+      "title": "【PUBG】タイムゾーンを1クリックで変更させる方法【東京⇔北京】",
+      "featured": false,
+      "ogImage": "../../../../assets/images/blog/2019/tokyo-beijing.jpg",
+      "tags": [
+        "PUBG",
+        "ゲームライフハック"
+      ],
+      "description": "PUBGで8×8マップを遊びたいのにマッチしない？そんなときは、サーバーリージョンを変更してみよう。1クリックで切り替えられる便利な方法を紹介します。",
+      "slug": "change-timezone-pubg",
+      "path": "src/data/blog/_2019/en/change-timezone-pubg.md",
+      "similarity": 0.49
+    },
+    {
+      "author": "Devkey",
       "pubDatetime": "2024-08-26T19:03:02.737Z",
       "title": "【Deadlock】日本語設定ファイルの作成方法",
       "slug": "localizing-deadlock-into-japanese",
@@ -833,21 +848,6 @@
       "description": "AWSの資格試験に合格しました。GWの思い出として、当時の振り返りと、やったこと、反省点兼ねて書き残してみます。生成AIとかも使ってみた振り返りも。",
       "path": "src/data/blog/_2024/launching-deadlock-japanese-website.md",
       "similarity": 0.4
-    },
-    {
-      "author": "Devkey",
-      "pubDatetime": "2022-09-29T15:57:52.737Z",
-      "title": "AWS Certified Solutions Architect - Associate (SAA-C03) 合格体験記",
-      "slug": "SAA-C03-pass-experience",
-      "featured": false,
-      "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
-      "tags": [
-        "AWS"
-      ],
-      "category": "資格取得",
-      "description": "先日 AWS Certified Solutions Architect – Associate（SAA-C03）を受験したので、情報共有します。2022年9月に SAA-C02 から SAA-C03 へ試験が切り替わったため、新試験の特徴を共有します。",
-      "path": "src/data/blog/_2022/SAA-C03-pass-experience.md",
-      "similarity": 0.37
     }
   ],
   "src/data/blog/_2019/how-to-create-pubg-api-key.md": [
@@ -885,6 +885,21 @@
     },
     {
       "author": "Devkey",
+      "pubDatetime": "2019-12-29T18:51:13.737Z",
+      "title": "【PUBG】タイムゾーンを1クリックで変更させる方法【東京⇔北京】",
+      "featured": false,
+      "ogImage": "../../../../assets/images/blog/2019/tokyo-beijing.jpg",
+      "tags": [
+        "PUBG",
+        "ゲームライフハック"
+      ],
+      "description": "PUBGで8×8マップを遊びたいのにマッチしない？そんなときは、サーバーリージョンを変更してみよう。1クリックで切り替えられる便利な方法を紹介します。",
+      "slug": "change-timezone-pubg",
+      "path": "src/data/blog/_2019/en/change-timezone-pubg.md",
+      "similarity": 0.51
+    },
+    {
+      "author": "Devkey",
       "pubDatetime": "2024-08-26T19:03:02.737Z",
       "title": "【Deadlock】日本語設定ファイルの作成方法",
       "slug": "localizing-deadlock-into-japanese",
@@ -912,24 +927,24 @@
       "description": "AWSの資格試験に合格しました。GWの思い出として、当時の振り返りと、やったこと、反省点兼ねて書き残してみます。生成AIとかも使ってみた振り返りも。",
       "path": "src/data/blog/_2024/launching-deadlock-japanese-website.md",
       "similarity": 0.37
-    },
+    }
+  ],
+  "src/data/blog/_2019/change-timezone-pubg.md": [
     {
       "author": "Devkey",
-      "pubDatetime": "2022-12-29T18:51:13.737Z",
-      "title": "【Chrome Extension】111",
-      "slug": "how-to-register-chrome-extension",
+      "pubDatetime": "2019-12-29T18:51:13.737Z",
+      "title": "【PUBG】タイムゾーンを1クリックで変更させる方法【東京⇔北京】",
       "featured": false,
-      "ogImage": "../../../assets/images/blog/2019/tokyo-beijing.jpg",
+      "ogImage": "../../../../assets/images/blog/2019/tokyo-beijing.jpg",
       "tags": [
         "PUBG",
         "ゲームライフハック"
       ],
       "description": "PUBGで8×8マップを遊びたいのにマッチしない？そんなときは、サーバーリージョンを変更してみよう。1クリックで切り替えられる便利な方法を紹介します。",
-      "path": "src/data/blog/_2022/ffmpeg-wasm-extension.md",
-      "similarity": 0.37
-    }
-  ],
-  "src/data/blog/_2019/change-timezone-pubg.md": [
+      "slug": "change-timezone-pubg",
+      "path": "src/data/blog/_2019/en/change-timezone-pubg.md",
+      "similarity": 1
+    },
     {
       "author": "Devkey",
       "pubDatetime": "2019-12-29T18:51:13.737Z",
@@ -991,12 +1006,14 @@
       "description": "AWSの資格試験に合格しました。GWの思い出として、当時の振り返りと、やったこと、反省点兼ねて書き残してみます。生成AIとかも使ってみた振り返りも。",
       "path": "src/data/blog/_2024/launching-deadlock-japanese-website.md",
       "similarity": 0.33
-    },
+    }
+  ],
+  "src/data/blog/_2019/en/change-timezone-pubg.md": [
     {
       "author": "Devkey",
-      "pubDatetime": "2022-12-29T18:51:13.737Z",
-      "title": "【Chrome Extension】111",
-      "slug": "how-to-register-chrome-extension",
+      "pubDatetime": "2019-12-29T18:51:13.737Z",
+      "title": "【PUBG】タイムゾーンを1クリックで変更させる方法【東京⇔北京】",
+      "slug": "change-timezone-pubg",
       "featured": false,
       "ogImage": "../../../assets/images/blog/2019/tokyo-beijing.jpg",
       "tags": [
@@ -1004,8 +1021,70 @@
         "ゲームライフハック"
       ],
       "description": "PUBGで8×8マップを遊びたいのにマッチしない？そんなときは、サーバーリージョンを変更してみよう。1クリックで切り替えられる便利な方法を紹介します。",
-      "path": "src/data/blog/_2022/ffmpeg-wasm-extension.md",
-      "similarity": 0.32
+      "path": "src/data/blog/_2019/change-timezone-pubg.md",
+      "similarity": 1
+    },
+    {
+      "author": "Devkey",
+      "pubDatetime": "2019-12-29T18:51:13.737Z",
+      "title": "【PUBG】PUBG API の使い方【API Key 作成から】",
+      "slug": "how-to-create-pubg-api-key",
+      "featured": false,
+      "ogImage": "../../../assets/images/blog/2019/pubg-apikey.jpg",
+      "tags": [
+        "PUBG",
+        "開発（ゲーム関連）"
+      ],
+      "description": "PUBG（PlayerUnknown's Battlegrounds）のマッチデータなどを分析するためには、公式の開発者APIキーが必要です。ここでは、PUBG APIキー取得手順を紹介します。",
+      "path": "src/data/blog/_2019/how-to-create-pubg-api-key.md",
+      "similarity": 0.51
+    },
+    {
+      "author": "Devkey",
+      "pubDatetime": "2020-01-29T21:22:51.127Z",
+      "title": "静音リングを使って最強のゲーミングキーボードにカスタマイズする方法",
+      "slug": "corsair-keyboard-customize",
+      "featured": false,
+      "ogImage": "../../../assets/images/blog/2020/corsair-keyboard-customize.png",
+      "tags": [
+        "キーボード",
+        "デバイス",
+        "ゲームライフハック"
+      ],
+      "category": "Hardware",
+      "description": "銀軸キーボードの魅力を最大限に引き出すカスタマイズ方法をご紹介。入力の速さを活かしつつ、デメリットを解決する方法を解説します。",
+      "path": "src/data/blog/_2020/corsair-keyboard-customize.mdx",
+      "similarity": 0.49
+    },
+    {
+      "author": "Devkey",
+      "pubDatetime": "2024-08-26T19:03:02.737Z",
+      "title": "【Deadlock】日本語設定ファイルの作成方法",
+      "slug": "localizing-deadlock-into-japanese",
+      "featured": false,
+      "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
+      "tags": [
+        "AWS",
+        "資格取得"
+      ],
+      "description": "AWSの資格試験に合格しました。GWの思い出として、当時の振り返りと、やったこと、反省点兼ねて書き残してみます。生成AIとかも使ってみた振り返りも。",
+      "path": "src/data/blog/_2024/localizing-deadlock-into-japanese.md",
+      "similarity": 0.41
+    },
+    {
+      "author": "Devkey",
+      "pubDatetime": "2024-08-28T19:03:02.737Z",
+      "title": "【Deadlock】日本語化ファイルを公開しました。",
+      "slug": "launching-deadlock-japanese-website",
+      "featured": false,
+      "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
+      "tags": [
+        "AWS",
+        "資格取得"
+      ],
+      "description": "AWSの資格試験に合格しました。GWの思い出として、当時の振り返りと、やったこと、反省点兼ねて書き残してみます。生成AIとかも使ってみた振り返りも。",
+      "path": "src/data/blog/_2024/launching-deadlock-japanese-website.md",
+      "similarity": 0.33
     }
   ]
 }
