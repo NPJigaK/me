@@ -1,5 +1,5 @@
 {
-  "src\\data\\blog\\_2024\\SCS-C02-pass-experience.md": [
+  "src/data/blog/_2024/SCS-C02-pass-experience.md": [
     {
       "author": "Devkey",
       "pubDatetime": "2024-09-30T15:57:52.737Z",
@@ -9,7 +9,7 @@
       "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
       "tags": ["AWS", "資格取得"],
       "description": "この度、AWS Certified Security - Specialty（SCS-C02）試験に無事合格できましたので、その体験をシェアします。",
-      "path": "src\\data\\blog\\_2024\\SCS-C02-pass-experience.md",
+      "path": "src/data/blog/_2024/SCS-C02-pass-experience.md",
       "similarity": 1
     },
     {
@@ -21,7 +21,7 @@
       "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
       "tags": ["AWS", "資格取得"],
       "description": "この度、AWS Certified Data Analytics - Specialty（DAS-C01） に合格しましたので、試験の体験記を共有します。",
-      "path": "src\\data\\blog\\_2024\\DAS-C01-pass-experience.md",
+      "path": "src/data/blog/_2024/DAS-C01-pass-experience.md",
       "similarity": 0.85
     },
     {
@@ -33,7 +33,7 @@
       "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
       "tags": ["AWS", "資格取得"],
       "description": "AWS Certified Data Analytics - Specialty（DAS-C01）試験に合格しましたので、その体験をシェアします。",
-      "path": "src\\data\\blog\\_2023\\DVA-C02-pass-experience.md",
+      "path": "src/data/blog/_2023/DVA-C02-pass-experience.md",
       "similarity": 0.85
     },
     {
@@ -45,7 +45,7 @@
       "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
       "tags": ["AWS", "資格取得"],
       "description": "この度、AWS Certified SysOps Administrator - Associate（SOA-C02）試験に無事合格できましたので、その体験を共有します。",
-      "path": "src\\data\\blog\\_2023\\SOA-C02-pass-experience.md",
+      "path": "src/data/blog/_2023/SOA-C02-pass-experience.md",
       "similarity": 0.81
     },
     {
@@ -57,11 +57,11 @@
       "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
       "tags": ["AWS", "資格取得"],
       "description": "AWSの資格試験に合格しました。GWの思い出として、当時の振り返りと、やったこと、反省点兼ねて書き残してみます。生成AIとかも使ってみた振り返りも。",
-      "path": "src\\data\\blog\\_2024\\launching-deadlock-japanese-website.md",
+      "path": "src/data/blog/_2024/launching-deadlock-japanese-website.md",
       "similarity": 0.75
     }
   ],
-  "src\\data\\blog\\_2025\\DOP-C02-pass-experience.md": [
+  "src/data/blog/_2025/DOP-C02-pass-experience.md": [
     {
       "author": "Devkey",
       "pubDatetime": "2025-03-24T15:57:52.737Z",
@@ -71,7 +71,7 @@
       "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
       "tags": ["AWS", "資格取得"],
       "description": "この度、AWS Certified DevOps Engineer - Professional（DOP-C02）試験に無事合格できましたので、その体験をシェアします。",
-      "path": "src\\data\\blog\\_2025\\DOP-C02-pass-experience.md",
+      "path": "src/data/blog/_2025/DOP-C02-pass-experience.md",
       "similarity": 0.85
     },
     {
@@ -83,7 +83,7 @@
       "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
       "tags": ["AWS", "資格取得"],
       "description": "この度、AWS Certified Security - Specialty（SCS-C02）試験に無事合格できましたので、その体験をシェアします。",
-      "path": "src\\data\\blog\\_2024\\SCS-C02-pass-experience.md",
+      "path": "src/data/blog/_2024/SCS-C02-pass-experience.md",
       "similarity": 0.85
     },
     {
@@ -95,7 +95,7 @@
       "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
       "tags": ["AWS", "資格取得"],
       "description": "この度、AWS Certified SysOps Administrator - Associate（SOA-C02）試験に無事合格できましたので、その体験を共有します。",
-      "path": "src\\data\\blog\\_2023\\SOA-C02-pass-experience.md",
+      "path": "src/data/blog/_2023/SOA-C02-pass-experience.md",
       "similarity": 0.8
     },
     {
@@ -107,7 +107,7 @@
       "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
       "tags": ["AWS", "資格取得"],
       "description": "AWS Certified Data Analytics - Specialty（DAS-C01）試験に合格しましたので、その体験をシェアします。",
-      "path": "src\\data\\blog\\_2023\\DVA-C02-pass-experience.md",
+      "path": "src/data/blog/_2023/DVA-C02-pass-experience.md",
       "similarity": 0.8
     },
     {
@@ -119,11 +119,11 @@
       "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
       "tags": ["AWS", "資格取得"],
       "description": "AWSの資格試験に合格しました。GWの思い出として、当時の振り返りと、やったこと、反省点兼ねて書き残してみます。生成AIとかも使ってみた振り返りも。",
-      "path": "src\\data\\blog\\_2024\\launching-deadlock-japanese-website.md",
+      "path": "src/data/blog/_2024/launching-deadlock-japanese-website.md",
       "similarity": 0.77
     }
   ],
-  "src\\data\\blog\\_2024\\launching-deadlock-japanese-website.md": [
+  "src/data/blog/_2024/launching-deadlock-japanese-website.md": [
     {
       "author": "Devkey",
       "pubDatetime": "2024-08-28T19:03:02.737Z",
@@ -133,7 +133,7 @@
       "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
       "tags": ["AWS", "資格取得"],
       "description": "AWSの資格試験に合格しました。GWの思い出として、当時の振り返りと、やったこと、反省点兼ねて書き残してみます。生成AIとかも使ってみた振り返りも。",
-      "path": "src\\data\\blog\\_2024\\launching-deadlock-japanese-website.md",
+      "path": "src/data/blog/_2024/launching-deadlock-japanese-website.md",
       "similarity": 0.94
     },
     {
@@ -145,7 +145,7 @@
       "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
       "tags": ["AWS", "資格取得"],
       "description": "AWSの資格試験に合格しました。GWの思い出として、当時の振り返りと、やったこと、反省点兼ねて書き残してみます。生成AIとかも使ってみた振り返りも。",
-      "path": "src\\data\\blog\\_2024\\localizing-deadlock-into-japanese.md",
+      "path": "src/data/blog/_2024/localizing-deadlock-into-japanese.md",
       "similarity": 0.92
     },
     {
@@ -157,7 +157,7 @@
       "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
       "tags": ["AWS", "資格取得"],
       "description": "この度、AWS Certified Data Analytics - Specialty（DAS-C01） に合格しましたので、試験の体験記を共有します。",
-      "path": "src\\data\\blog\\_2024\\DAS-C01-pass-experience.md",
+      "path": "src/data/blog/_2024/DAS-C01-pass-experience.md",
       "similarity": 0.74
     },
     {
@@ -169,7 +169,7 @@
       "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
       "tags": ["AWS", "資格取得"],
       "description": "この度、AWS Certified SysOps Administrator - Associate（SOA-C02）試験に無事合格できましたので、その体験を共有します。",
-      "path": "src\\data\\blog\\_2023\\SOA-C02-pass-experience.md",
+      "path": "src/data/blog/_2023/SOA-C02-pass-experience.md",
       "similarity": 0.72
     },
     {
@@ -181,11 +181,11 @@
       "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
       "tags": ["AWS", "資格取得"],
       "description": "この度、AWS Certified DevOps Engineer - Professional（DOP-C02）試験に無事合格できましたので、その体験をシェアします。",
-      "path": "src\\data\\blog\\_2025\\DOP-C02-pass-experience.md",
+      "path": "src/data/blog/_2025/DOP-C02-pass-experience.md",
       "similarity": 0.7
     }
   ],
-  "src\\data\\blog\\_2024\\localizing-deadlock-into-japanese.md": [
+  "src/data/blog/_2024/localizing-deadlock-into-japanese.md": [
     {
       "author": "Devkey",
       "pubDatetime": "2024-08-26T19:03:02.737Z",
@@ -195,7 +195,7 @@
       "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
       "tags": ["AWS", "資格取得"],
       "description": "AWSの資格試験に合格しました。GWの思い出として、当時の振り返りと、やったこと、反省点兼ねて書き残してみます。生成AIとかも使ってみた振り返りも。",
-      "path": "src\\data\\blog\\_2024\\localizing-deadlock-into-japanese.md",
+      "path": "src/data/blog/_2024/localizing-deadlock-into-japanese.md",
       "similarity": 0.2
     },
     {
@@ -207,7 +207,7 @@
       "ogImage": "../../../assets/images/blog/2019/tokyo-beijing.jpg",
       "tags": ["PUBG", "ゲームライフハック"],
       "description": "PUBGで8×8マップを遊びたいのにマッチしない？そんなときは、サーバーリージョンを変更してみよう。1クリックで切り替えられる便利な方法を紹介します。",
-      "path": "src\\data\\blog\\_2022\\ffmpeg-wasm-extension.md",
+      "path": "src/data/blog/_2022/ffmpeg-wasm-extension.md",
       "similarity": 0.19
     },
     {
@@ -219,7 +219,7 @@
       "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
       "tags": ["AWS", "資格取得"],
       "description": "AWSの資格試験に合格しました。GWの思い出として、当時の振り返りと、やったこと、反省点兼ねて書き残してみます。生成AIとかも使ってみた振り返りも。",
-      "path": "src\\data\\blog\\_2024\\launching-deadlock-japanese-website.md",
+      "path": "src/data/blog/_2024/launching-deadlock-japanese-website.md",
       "similarity": 0.18
     },
     {
@@ -232,7 +232,7 @@
       "tags": ["AWS"],
       "category": "資格取得",
       "description": "先日 AWS Certified Solutions Architect – Associate（SAA-C03）を受験したので、情報共有します。2022年9月に SAA-C02 から SAA-C03 へ試験が切り替わったため、新試験の特徴を共有します。",
-      "path": "src\\data\\blog\\_2022\\SAA-C03-pass-experience.md",
+      "path": "src/data/blog/_2022/SAA-C03-pass-experience.md",
       "similarity": 0.16
     },
     {
@@ -245,11 +245,11 @@
       "tags": ["キーボード", "デバイス", "ゲームライフハック"],
       "category": "Hardware",
       "description": "銀軸キーボードの魅力を最大限に引き出すカスタマイズ方法をご紹介。入力の速さを活かしつつ、デメリットを解決する方法を解説します。",
-      "path": "src\\data\\blog\\_2020\\corsair-keyboard-customize.mdx",
+      "path": "src/data/blog/_2020/corsair-keyboard-customize.mdx",
       "similarity": 0.13
     }
   ],
-  "src\\data\\blog\\_2023\\DVA-C02-pass-experience.md": [
+  "src/data/blog/_2023/DVA-C02-pass-experience.md": [
     {
       "author": "Devkey",
       "pubDatetime": "2023-03-29T15:57:52.737Z",
@@ -259,7 +259,7 @@
       "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
       "tags": ["AWS", "資格取得"],
       "description": "AWS Certified Data Analytics - Specialty（DAS-C01）試験に合格しましたので、その体験をシェアします。",
-      "path": "src\\data\\blog\\_2023\\DVA-C02-pass-experience.md",
+      "path": "src/data/blog/_2023/DVA-C02-pass-experience.md",
       "similarity": 0.83
     },
     {
@@ -271,7 +271,7 @@
       "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
       "tags": ["AWS", "資格取得"],
       "description": "この度、AWS Certified DevOps Engineer - Professional（DOP-C02）試験に無事合格できましたので、その体験をシェアします。",
-      "path": "src\\data\\blog\\_2025\\DOP-C02-pass-experience.md",
+      "path": "src/data/blog/_2025/DOP-C02-pass-experience.md",
       "similarity": 0.81
     },
     {
@@ -283,7 +283,7 @@
       "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
       "tags": ["AWS", "資格取得"],
       "description": "この度、AWS Certified Security - Specialty（SCS-C02）試験に無事合格できましたので、その体験をシェアします。",
-      "path": "src\\data\\blog\\_2024\\SCS-C02-pass-experience.md",
+      "path": "src/data/blog/_2024/SCS-C02-pass-experience.md",
       "similarity": 0.81
     },
     {
@@ -295,7 +295,7 @@
       "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
       "tags": ["AWS", "資格取得"],
       "description": "この度、AWS Certified Data Analytics - Specialty（DAS-C01） に合格しましたので、試験の体験記を共有します。",
-      "path": "src\\data\\blog\\_2024\\DAS-C01-pass-experience.md",
+      "path": "src/data/blog/_2024/DAS-C01-pass-experience.md",
       "similarity": 0.8
     },
     {
@@ -307,11 +307,11 @@
       "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
       "tags": ["AWS", "資格取得"],
       "description": "AWSの資格試験に合格しました。GWの思い出として、当時の振り返りと、やったこと、反省点兼ねて書き残してみます。生成AIとかも使ってみた振り返りも。",
-      "path": "src\\data\\blog\\_2024\\launching-deadlock-japanese-website.md",
+      "path": "src/data/blog/_2024/launching-deadlock-japanese-website.md",
       "similarity": 0.76
     }
   ],
-  "src\\data\\blog\\_2019\\how-to-create-pubg-api-key.md": [
+  "src/data/blog/_2019/how-to-create-pubg-api-key.md": [
     {
       "author": "Devkey",
       "pubDatetime": "2019-12-29T18:51:13.737Z",
@@ -321,7 +321,7 @@
       "ogImage": "../../../assets/images/blog/2019/pubg-apikey.jpg",
       "tags": ["PUBG", "開発（ゲーム関連）"],
       "description": "PUBG（PlayerUnknown's Battlegrounds）のマッチデータなどを分析するためには、公式の開発者APIキーが必要です。ここでは、PUBG APIキー取得手順を紹介します。",
-      "path": "src\\data\\blog\\_2019\\how-to-create-pubg-api-key.md",
+      "path": "src/data/blog/_2019/how-to-create-pubg-api-key.md",
       "similarity": 0.51
     },
     {
@@ -334,7 +334,7 @@
       "tags": ["キーボード", "デバイス", "ゲームライフハック"],
       "category": "Hardware",
       "description": "銀軸キーボードの魅力を最大限に引き出すカスタマイズ方法をご紹介。入力の速さを活かしつつ、デメリットを解決する方法を解説します。",
-      "path": "src\\data\\blog\\_2020\\corsair-keyboard-customize.mdx",
+      "path": "src/data/blog/_2020/corsair-keyboard-customize.mdx",
       "similarity": 0.49
     },
     {
@@ -346,7 +346,7 @@
       "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
       "tags": ["AWS", "資格取得"],
       "description": "AWSの資格試験に合格しました。GWの思い出として、当時の振り返りと、やったこと、反省点兼ねて書き残してみます。生成AIとかも使ってみた振り返りも。",
-      "path": "src\\data\\blog\\_2024\\localizing-deadlock-into-japanese.md",
+      "path": "src/data/blog/_2024/localizing-deadlock-into-japanese.md",
       "similarity": 0.41
     },
     {
@@ -358,7 +358,7 @@
       "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
       "tags": ["AWS", "資格取得"],
       "description": "AWSの資格試験に合格しました。GWの思い出として、当時の振り返りと、やったこと、反省点兼ねて書き残してみます。生成AIとかも使ってみた振り返りも。",
-      "path": "src\\data\\blog\\_2024\\launching-deadlock-japanese-website.md",
+      "path": "src/data/blog/_2024/launching-deadlock-japanese-website.md",
       "similarity": 0.33
     },
     {
@@ -370,11 +370,11 @@
       "ogImage": "../../../assets/images/blog/2019/tokyo-beijing.jpg",
       "tags": ["PUBG", "ゲームライフハック"],
       "description": "PUBGで8×8マップを遊びたいのにマッチしない？そんなときは、サーバーリージョンを変更してみよう。1クリックで切り替えられる便利な方法を紹介します。",
-      "path": "src\\data\\blog\\_2022\\ffmpeg-wasm-extension.md",
+      "path": "src/data/blog/_2022/ffmpeg-wasm-extension.md",
       "similarity": 0.32
     }
   ],
-  "src\\data\\blog\\_2020\\corsair-keyboard-customize.mdx": [
+  "src/data/blog/_2020/corsair-keyboard-customize.mdx": [
     {
       "author": "Devkey",
       "pubDatetime": "2020-01-29T21:22:51.127Z",
@@ -385,7 +385,7 @@
       "tags": ["キーボード", "デバイス", "ゲームライフハック"],
       "category": "Hardware",
       "description": "銀軸キーボードの魅力を最大限に引き出すカスタマイズ方法をご紹介。入力の速さを活かしつつ、デメリットを解決する方法を解説します。",
-      "path": "src\\data\\blog\\_2020\\corsair-keyboard-customize.mdx",
+      "path": "src/data/blog/_2020/corsair-keyboard-customize.mdx",
       "similarity": 0.52
     },
     {
@@ -397,7 +397,7 @@
       "ogImage": "../../../assets/images/blog/2019/tokyo-beijing.jpg",
       "tags": ["PUBG", "ゲームライフハック"],
       "description": "PUBGで8×8マップを遊びたいのにマッチしない？そんなときは、サーバーリージョンを変更してみよう。1クリックで切り替えられる便利な方法を紹介します。",
-      "path": "src\\data\\blog\\_2019\\change-timezone-pubg.md",
+      "path": "src/data/blog/_2019/change-timezone-pubg.md",
       "similarity": 0.51
     },
     {
@@ -409,7 +409,7 @@
       "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
       "tags": ["AWS", "資格取得"],
       "description": "AWSの資格試験に合格しました。GWの思い出として、当時の振り返りと、やったこと、反省点兼ねて書き残してみます。生成AIとかも使ってみた振り返りも。",
-      "path": "src\\data\\blog\\_2024\\localizing-deadlock-into-japanese.md",
+      "path": "src/data/blog/_2024/localizing-deadlock-into-japanese.md",
       "similarity": 0.39
     },
     {
@@ -421,7 +421,7 @@
       "ogImage": "../../../assets/images/blog/2021/AWS.JPG",
       "tags": ["AWS", "資格取得"],
       "description": "AWSの資格試験に合格しました。GWの思い出として、当時の振り返りと、やったこと、反省点兼ねて書き残してみます。生成AIとかも使ってみた振り返りも。",
-      "path": "src\\data\\blog\\_2024\\launching-deadlock-japanese-website.md",
+      "path": "src/data/blog/_2024/launching-deadlock-japanese-website.md",
       "similarity": 0.37
     },
     {
@@ -433,7 +433,7 @@
       "ogImage": "../../../assets/images/blog/2019/tokyo-beijing.jpg",
       "tags": ["PUBG", "ゲームライフハック"],
       "description": "PUBGで8×8マップを遊びたいのにマッチしない？そんなときは、サーバーリージョンを変更してみよう。1クリックで切り替えられる便利な方法を紹介します。",
-      "path": "src\\data\\blog\\_2022\\ffmpeg-wasm-extension.md",
+      "path": "src/data/blog/_2022/ffmpeg-wasm-extension.md",
       "similarity": 0.37
     }
   ]

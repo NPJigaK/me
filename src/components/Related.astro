@@ -26,7 +26,8 @@ export interface Props {
 }
 
 const { filePath, maxItems = 5 } = Astro.props;
-const items = (filePath && similarities[filePath]) || [];
+const normalized = filePath?.replace(/\\/g, "/");
+const items = (normalized && similarities[normalized]) || [];
 const related = items.slice(0, maxItems);
 ---
 

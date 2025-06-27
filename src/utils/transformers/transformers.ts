@@ -9,6 +9,10 @@ import { remark } from "remark";
 import strip from "strip-markdown";
 import path from "path";
 
+/** Normalize paths to use forward slashes so results are
+ * consistent across operating systems. */
+const toPosix = (p: string) => p.split(path.sep).join("/");
+
 // --------- Configurations ---------
 const GLOB = "src/data/blog/**/*.{md,mdx}"; // Where to find Markdown content
 const OUT = "src/assets/similarities.json"; // Output file for results
@@ -78,12 +82,16 @@ const getPlainText = async (md: string) => {
  * - Converts content to plain text
  * - Skips drafts or files with no slug
  */
-async function processFile(path: string): Promise<Document | null> {
+async function processFile(filePath: string): Promise<Document | null> {
   try {
-    const { content, data } = matter(fs.readFileSync(path, "utf-8"));
+    const { content, data } = matter(fs.readFileSync(filePath, "utf-8"));
     if (!data.slug || data.draft) return null;
     const plain = await getPlainText(content);
-    return { path, content: plain, frontmatter: data as Frontmatter };
+    return {
+      path: toPosix(filePath),
+      content: plain,
+      frontmatter: data as Frontmatter,
+    };
   } catch {
     return null;
   }
