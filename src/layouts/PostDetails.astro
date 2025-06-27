@@ -83,8 +83,6 @@ const currentPostIndex = allPosts.findIndex(a => a.id === post.id);
 const prevPost = currentPostIndex !== 0 ? allPosts[currentPostIndex - 1] : null;
 const nextPost =
   currentPostIndex !== allPosts.length ? allPosts[currentPostIndex + 1] : null;
-
-const slug = getPath(post.id, post.filePath, false);
 ---
 
 <Layout {...layoutProps}>
@@ -136,7 +134,7 @@ const slug = getPath(post.id, post.filePath, false);
 
     <ShareLinks />
 
-    <Related {slug} />
+    <Related filePath={post.filePath} />
 
     <AdSense />
 

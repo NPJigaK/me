@@ -150,11 +150,11 @@ function topSimilar(
 }
 
 /**
- * Computes all similarities for every document, returns as {slug: SimilarityResult[]} map.
+ * Computes all similarities for every document, returns as {path: SimilarityResult[]} map.
  */
 function allSimilarities(docs: Document[], embs: Float32Array[], n: number) {
   return Object.fromEntries(
-    docs.map((d, i) => [d.frontmatter.slug, topSimilar(i, docs, embs, n)])
+    docs.map((d, i) => [d.path, topSimilar(i, docs, embs, n)])
   );
 }
 

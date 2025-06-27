@@ -21,12 +21,12 @@ interface RelatedPost {
 const similarities = rawSimilarities as Record<string, RelatedPost[]>;
 
 export interface Props {
-  slug: string;
+  filePath: string | undefined;
   maxItems?: number;
 }
 
-const { slug, maxItems = 5 } = Astro.props;
-const items = similarities[slug] || [];
+const { filePath, maxItems = 5 } = Astro.props;
+const items = (filePath && similarities[filePath]) || [];
 const related = items.slice(0, maxItems);
 ---
 
