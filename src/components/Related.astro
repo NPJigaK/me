@@ -1,9 +1,8 @@
 ---
 import Tag from "./Tag.astro";
-import Datetime from "./Datetime.astro";
 import { slugifyStr } from "@/utils/slugify";
-import { SITE } from "@/config";
 import rawSimilarities from "../assets/similarities.json";
+import path from "node:path";
 
 interface RelatedPost {
   author: string;
@@ -19,6 +18,16 @@ interface RelatedPost {
 }
 
 const similarities = rawSimilarities as Record<string, RelatedPost[]>;
+
+const BASE_RAW_URL =
+  "https://raw.githubusercontent.com/NPJigaK/me/refs/heads/ads/";
+
+function getImageUrl(post: RelatedPost) {
+  const normalizedPath = path.normalize(
+    path.join(path.dirname(post.path), post.ogImage)
+  );
+  return BASE_RAW_URL + normalizedPath;
+}
 
 export interface Props {
   filePath: string | undefined;
@@ -51,7 +60,7 @@ const related = items.slice(0, maxItems);
                     </ul>
                   )}
                   <img
-                    src={post.ogImage}
+                    src={getImageUrl(post)}
                     alt={post.title}
                     class="aspect-video w-full object-cover"
                     loading="lazy"
