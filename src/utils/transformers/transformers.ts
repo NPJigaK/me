@@ -85,7 +85,14 @@ const getPlainText = async (md: string) => {
 async function processFile(filePath: string): Promise<Document | null> {
   try {
     const { content, data } = matter(fs.readFileSync(filePath, "utf-8"));
-    if (!data.slug || data.draft) return null;
+    if (data.draft) return null;
+
+    // Fallback slug from the file name when frontmatter slug is missing
+    if (!data.slug) {
+      const base = path.basename(filePath, path.extname(filePath));
+      data.slug = base;
+    }
+
     const plain = await getPlainText(content);
     const absPath = path.resolve(filePath);
     const relPath = path.relative(process.cwd(), absPath);
