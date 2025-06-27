@@ -88,7 +88,7 @@ async function processFile(filePath: string): Promise<Document | null> {
     if (!data.slug || data.draft) return null;
     const plain = await getPlainText(content);
     return {
-      path: toPosix(filePath),
+      path: toPosix(path.relative(process.cwd(), filePath)),
       content: plain,
       frontmatter: data as Frontmatter,
     };
