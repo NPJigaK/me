@@ -37,32 +37,39 @@ const related = items.slice(0, maxItems);
       <h2 id="related-title" class="text-2xl font-semibold tracking-wide">
         Related Posts
       </h2>
-      <ul>
+      <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2">
         {related.map(post => (
-          <li class="my-6">
-            <a
-              href={`/posts/${post.slug}/`}
-              class="inline-block text-lg font-medium text-accent decoration-dashed underline-offset-4 hover:underline focus-visible:no-underline focus-visible:underline-offset-0"
-            >
-              <h3 class="text-lg font-medium decoration-dashed hover:underline">
-                {post.title}
-              </h3>
+          <li class="overflow-hidden rounded border border-border">
+            <a href={`/posts/${post.slug}/`} class="block hover:opacity-90">
+              <div class="relative">
+                {post.tags && post.tags.length > 0 && (
+                  <ul class="absolute top-2 left-2 z-10 flex flex-wrap gap-1">
+                    {post.tags.map((tag: string) => (
+                      <Tag tag={slugifyStr(tag)} tagName={tag} size="sm" />
+                    ))}
+                  </ul>
+                )}
+                <img
+                  src={post.ogImage}
+                  alt={post.title}
+                  class="aspect-video w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div class="p-3">
+                <h3 class="text-lg font-medium decoration-dashed hover:underline">
+                  {post.title}
+                </h3>
+                <div class="my-1 flex items-center gap-2 text-sm">
+                  <Datetime
+                    pubDatetime={new Date(post.pubDatetime)}
+                    modDatetime={null}
+                    timezone={SITE.timezone}
+                  />
+                </div>
+                <p class="text-sm">{post.description}</p>
+              </div>
             </a>
-            <div class="flex items-center gap-2">
-              <Datetime
-                pubDatetime={new Date(post.pubDatetime)}
-                modDatetime={null}
-                timezone={SITE.timezone}
-              />
-            </div>
-            <p>{post.description}</p>
-            {post.tags && post.tags.length > 0 && (
-              <ul class="mt-2 flex flex-wrap gap-1">
-                {post.tags.map((tag: string) => (
-                  <Tag tag={slugifyStr(tag)} tagName={tag} size="sm" />
-                ))}
-              </ul>
-            )}
           </li>
         ))}
       </ul>
