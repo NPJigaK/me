@@ -43,8 +43,7 @@ const normalized = filePath?.replace(/\\/g, "/");
 const items = (normalized && similarities[normalized]) || [];
 const related = items.slice(0, maxItems);
 ---
-{console.log(filePath)}
-{console.log(maxItems)}
+
 {
   related.length > 0 && (
     <section class="my-8" aria-labelledby="related-title">
