@@ -53,25 +53,24 @@ const related = items.slice(0, maxItems);
       <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2">
         {related.map(post => (
           <li class="my-6">
-            <a href={`/posts/${post.slug}/`} class="block hover:opacity-90">
-              <div class="overflow-hidden rounded border border-border">
-                <div class="relative">
-                  {post.tags && post.tags.length > 0 && (
-                    <ul class="absolute top-2 left-2 z-10 flex flex-wrap gap-1">
-                      {post.tags.map((tag: string) => (
-                        <Tag tag={slugifyStr(tag)} tagName={tag} size="sm" />
-                      ))}
-                    </ul>
-                  )}
-                  <img
-                    src={getImageUrl(post)}
-                    alt={post.title}
-                    class="aspect-video w-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-            </a>
+            <div class="relative overflow-hidden rounded border border-border">
+              <a href={`/posts/${post.slug}/`} class="block hover:opacity-90">
+                <img
+                  src={getImageUrl(post)}
+                  alt={post.title}
+                  class="aspect-video w-full object-cover"
+                  loading="lazy"
+                />
+              </a>
+
+              {post.tags && post.tags.length > 0 && (
+                <ul class="absolute top-2 left-2 z-10 flex flex-wrap gap-1">
+                  {post.tags.map((tag: string) => (
+                    <Tag tag={slugifyStr(tag)} tagName={tag} size="sm" />
+                  ))}
+                </ul>
+              )}
+            </div>
           </li>
         ))}
       </ul>
