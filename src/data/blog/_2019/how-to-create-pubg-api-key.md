@@ -2,7 +2,6 @@
 author: Devkey
 pubDatetime: 2019-12-29T18:51:13.737Z
 title: 【PUBG】PUBG API の使い方【API Key 作成から】
-slug: how-to-create-pubg-api-key
 featured: false
 ogImage: ../../../assets/images/blog/2019/pubg-apikey.jpg
 tags:

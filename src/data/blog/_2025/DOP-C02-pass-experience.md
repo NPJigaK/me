@@ -2,7 +2,6 @@
 author: Devkey
 pubDatetime: 2025-03-24T15:57:52.737Z
 title: AWS Certified DevOps Engineer - Professional（DOP-C02）合格体験記
-slug: DOP-C02-pass-experience
 featured: false
 ogImage: ../../../assets/images/blog/2021/AWS.JPG
 tags:
