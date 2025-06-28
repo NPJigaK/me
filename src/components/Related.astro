@@ -21,8 +21,12 @@ const similarities = rawSimilarities as Record<string, RelatedPost[]>;
 
 const BASE_RAW_URL =
   "https://raw.githubusercontent.com/NPJigaK/me/refs/heads/ads/";
+const BASE_BLOG_URL = "http://localhost:4321/posts/";
 
 function getImageUrl(post: RelatedPost) {
+  if(!post.ogImage){
+    return BASE_BLOG_URL + post.slug + "/index.png";
+  }
   const normalizedPath = path.normalize(
     path.join(path.dirname(post.path), post.ogImage)
   );

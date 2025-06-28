@@ -2,7 +2,6 @@
 author: Devkey
 pubDatetime: 2024-09-30T15:57:52.737Z
 title: AWS Certified Security - Specialty（SCS-C02）合格体験記
-slug: SCS-C02-pass-experience
 featured: false
 ogImage: ../../../assets/images/blog/2021/AWS.JPG
 tags:
