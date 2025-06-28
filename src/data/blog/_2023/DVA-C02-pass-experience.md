@@ -2,7 +2,6 @@
 author: Devkey
 pubDatetime: 2023-03-29T15:57:52.737Z
 title: AWS Certified Data Analytics - Specialty（DAS-C01）合格体験記
-slug: SAA-C03-pass-experience
 featured: false
 ogImage: ../../../assets/images/blog/2021/AWS.JPG
 tags:

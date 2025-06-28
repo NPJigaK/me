@@ -2,7 +2,6 @@
 author: Devkey
 pubDatetime: 2019-12-29T18:51:13.737Z
 title: 【PUBG】タイムゾーンを1クリックで変更させる方法【東京⇔北京】
-slug: change-timezone-pubg
 featured: false
 ogImage: ../../../assets/images/blog/2019/tokyo-beijing.jpg
 tags:

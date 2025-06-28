@@ -1,9 +1,8 @@
 ---
 import Tag from "./Tag.astro";
-import Datetime from "./Datetime.astro";
 import { slugifyStr } from "@/utils/slugify";
-import { SITE } from "@/config";
 import rawSimilarities from "../assets/similarities.json";
+import path from "node:path";
 
 interface RelatedPost {
   author: string;
@@ -19,6 +18,20 @@ interface RelatedPost {
 }
 
 const similarities = rawSimilarities as Record<string, RelatedPost[]>;
+
+const BASE_RAW_URL =
+  "https://raw.githubusercontent.com/NPJigaK/me/refs/heads/ads/";
+const BASE_BLOG_URL = "http://localhost:4321/posts/";
+
+function getImageUrl(post: RelatedPost) {
+  if(!post.ogImage){
+    return BASE_BLOG_URL + post.slug + "/index.png";
+  }
+  const normalizedPath = path.normalize(
+    path.join(path.dirname(post.path), post.ogImage)
+  );
+  return BASE_RAW_URL + normalizedPath;
+}
 
 export interface Props {
   filePath: string | undefined;
@@ -37,32 +50,28 @@ const related = items.slice(0, maxItems);
       <h2 id="related-title" class="text-2xl font-semibold tracking-wide">
         Related Posts
       </h2>
-      <ul>
+      <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2">
         {related.map(post => (
           <li class="my-6">
-            <a
-              href={`/posts/${post.slug}/`}
-              class="inline-block text-lg font-medium text-accent decoration-dashed underline-offset-4 hover:underline focus-visible:no-underline focus-visible:underline-offset-0"
-            >
-              <h3 class="text-lg font-medium decoration-dashed hover:underline">
-                {post.title}
-              </h3>
+            <a href={`/posts/${post.slug}/`} class="block hover:opacity-90">
+              <div class="overflow-hidden rounded border border-border">
+                <div class="relative">
+                  {post.tags && post.tags.length > 0 && (
+                    <ul class="absolute top-2 left-2 z-10 flex flex-wrap gap-1">
+                      {post.tags.map((tag: string) => (
+                        <Tag tag={slugifyStr(tag)} tagName={tag} size="sm" />
+                      ))}
+                    </ul>
+                  )}
+                  <img
+                    src={getImageUrl(post)}
+                    alt={post.title}
+                    class="aspect-video w-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
             </a>
-            <div class="flex items-center gap-2">
-              <Datetime
-                pubDatetime={new Date(post.pubDatetime)}
-                modDatetime={null}
-                timezone={SITE.timezone}
-              />
-            </div>
-            <p>{post.description}</p>
-            {post.tags && post.tags.length > 0 && (
-              <ul class="mt-2 flex flex-wrap gap-1">
-                {post.tags.map((tag: string) => (
-                  <Tag tag={slugifyStr(tag)} tagName={tag} size="sm" />
-                ))}
-              </ul>
-            )}
           </li>
         ))}
       </ul>
