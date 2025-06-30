@@ -77,11 +77,6 @@ export default defineConfig({
         context: "client",
         optional: true,
       }),
-      PUBLIC_GOOGLE_ADSENSE_SLOT: envField.string({
-        access: "public",
-        context: "client",
-        optional: true,
-      }),
     },
   },
   experimental: {
