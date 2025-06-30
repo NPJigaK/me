@@ -1,5 +1,6 @@
 ---
 import Tag from "./Tag.astro";
+import AdSense from "./AdSense.astro";
 import { slugifyStr } from "@/utils/slugify";
 import rawSimilarities from "../assets/similarities.json";
 import path from "node:path";
@@ -24,7 +25,7 @@ const BASE_RAW_URL =
 const BASE_BLOG_URL = "https://devkey.jp/posts/";
 
 function getImageUrl(post: RelatedPost) {
-  if(!post.ogImage){
+  if (!post.ogImage) {
     return BASE_BLOG_URL + post.slug + "/index.png";
   }
   const normalizedPath = path.normalize(
@@ -42,6 +43,7 @@ const { filePath, maxItems = 5 } = Astro.props;
 const normalized = filePath?.replace(/\\/g, "/");
 const items = (normalized && similarities[normalized]) || [];
 const related = items.slice(0, maxItems);
+const ADS_SLOT_ID = "2943797848";
 ---
 
 {
@@ -73,6 +75,9 @@ const related = items.slice(0, maxItems);
             </div>
           </li>
         ))}
+        <li class="my-6">
+          <AdSense slot={ADS_SLOT_ID} />
+        </li>
       </ul>
     </section>
   )
