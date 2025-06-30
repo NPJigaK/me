@@ -76,7 +76,9 @@ const ADS_SLOT_ID = "2943797848";
           </li>
         ))}
         <li class="my-6">
-          <AdSense slot={ADS_SLOT_ID} />
+          <div class="relative aspect-video overflow-hidden rounded border border-border">
+            <AdSense slot={ADS_SLOT_ID} class="h-full w-full" />
+          </div>
         </li>
       </ul>
     </section>
