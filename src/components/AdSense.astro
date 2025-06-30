@@ -1,18 +1,21 @@
 ---
-import {
-  PUBLIC_GOOGLE_ADSENSE_CLIENT,
-  PUBLIC_GOOGLE_ADSENSE_SLOT,
-} from "astro:env/client";
+import { PUBLIC_GOOGLE_ADSENSE_CLIENT } from "astro:env/client";
+
+export interface Props {
+  slot?: string;
+}
+
+const { slot } = Astro.props as Props;
 ---
 
 {
-  PUBLIC_GOOGLE_ADSENSE_CLIENT && PUBLIC_GOOGLE_ADSENSE_SLOT && (
+  PUBLIC_GOOGLE_ADSENSE_CLIENT && slot && (
     <>
       <ins
         class="adsbygoogle"
         style="display:block"
         data-ad-client={PUBLIC_GOOGLE_ADSENSE_CLIENT}
-        data-ad-slot={PUBLIC_GOOGLE_ADSENSE_SLOT}
+        data-ad-slot={slot}
         data-ad-format="auto"
         data-full-width-responsive="true"
       />
