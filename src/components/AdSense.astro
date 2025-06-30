@@ -4,9 +4,16 @@ import { PUBLIC_GOOGLE_ADSENSE_CLIENT } from "astro:env/client";
 export interface Props {
   slot?: string;
   class?: string;
+  width?: string;
+  height?: string;
 }
 
-const { slot = "", class: className = "" } = Astro.props as Props;
+const {
+  slot = "",
+  class: className = "",
+  width = "",
+  height = "",
+} = Astro.props as Props;
 ---
 
 {
@@ -14,7 +21,9 @@ const { slot = "", class: className = "" } = Astro.props as Props;
     <>
       <ins
         class:list={["adsbygoogle", className]}
-        style="display:block"
+        style={`display:block${width ? `;width:${width}` : ""}${
+          height ? `;height:${height}` : ""
+        }`}
         data-ad-client={PUBLIC_GOOGLE_ADSENSE_CLIENT}
         data-ad-slot={slot}
         data-ad-format="auto"
