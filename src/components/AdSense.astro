@@ -5,7 +5,7 @@ export interface Props {
   slot?: string;
 }
 
-const { slot } = Astro.props as Props;
+const { slot = "" } = Astro.props as Props;
 ---
 
 {
