@@ -1,8 +1,13 @@
 ---
 import Tag from "./Tag.astro";
+import AdSense from "./AdSense.astro";
 import { slugifyStr } from "@/utils/slugify";
 import rawSimilarities from "../assets/similarities.json";
 import path from "node:path";
+import {
+  PUBLIC_GOOGLE_ADSENSE_CLIENT,
+  PUBLIC_GOOGLE_ADSENSE_SLOT,
+} from "astro:env/client";
 
 interface RelatedPost {
   author: string;
@@ -24,7 +29,7 @@ const BASE_RAW_URL =
 const BASE_BLOG_URL = "https://devkey.jp/posts/";
 
 function getImageUrl(post: RelatedPost) {
-  if(!post.ogImage){
+  if (!post.ogImage) {
     return BASE_BLOG_URL + post.slug + "/index.png";
   }
   const normalizedPath = path.normalize(
@@ -42,10 +47,15 @@ const { filePath, maxItems = 5 } = Astro.props;
 const normalized = filePath?.replace(/\\/g, "/");
 const items = (normalized && similarities[normalized]) || [];
 const related = items.slice(0, maxItems);
+const enableAds = Boolean(
+  PUBLIC_GOOGLE_ADSENSE_CLIENT && PUBLIC_GOOGLE_ADSENSE_SLOT
+);
+const adCount = enableAds ? Math.max(1, 6 - related.length) : 0;
+const hasContent = related.length > 0 || adCount > 0;
 ---
 
 {
-  related.length > 0 && (
+  hasContent && (
     <section class="my-8" aria-labelledby="related-title">
       <h2 id="related-title" class="text-2xl font-semibold tracking-wide">
         Related Posts
@@ -70,6 +80,13 @@ const related = items.slice(0, maxItems);
                   ))}
                 </ul>
               )}
+            </div>
+          </li>
+        ))}
+        {Array.from({ length: adCount }).map(() => (
+          <li class="my-6">
+            <div class="relative overflow-hidden rounded border border-border">
+              <AdSense />
             </div>
           </li>
         ))}
