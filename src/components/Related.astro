@@ -24,9 +24,15 @@ const BASE_RAW_URL =
   "https://raw.githubusercontent.com/NPJigaK/me/refs/heads/ads/";
 const BASE_BLOG_URL = "https://devkey.jp/posts/";
 
+function getPostUrl(post: RelatedPost) {
+  const prefix = post.path.includes("/en/") ? "en/" : "";
+  return `/posts/${prefix}${post.slug}/`;
+}
+
 function getImageUrl(post: RelatedPost) {
   if (!post.ogImage) {
-    return BASE_BLOG_URL + post.slug + "/index.png";
+    const prefix = post.path.includes("/en/") ? "en/" : "";
+    return BASE_BLOG_URL + prefix + post.slug + "/index.png";
   }
   const normalizedPath = path.normalize(
     path.join(path.dirname(post.path), post.ogImage)
@@ -56,7 +62,7 @@ const ADS_SLOT_ID = "5781165437";
         {related.map(post => (
           <li class="my-6">
             <div class="relative overflow-hidden rounded border border-border">
-              <a href={`/posts/${post.slug}/`} class="block hover:opacity-90">
+              <a href={getPostUrl(post)} class="block hover:opacity-90">
                 <img
                   src={getImageUrl(post)}
                   alt={post.title}
