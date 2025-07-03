@@ -70,14 +70,6 @@ const ADS_SLOT_ID = "5781165437";
                   loading="lazy"
                 />
               </a>
-
-              {post.tags && post.tags.length > 0 && (
-                <ul class="absolute top-2 left-2 z-10 flex flex-wrap gap-1">
-                  {post.tags.map((tag: string) => (
-                    <Tag tag={slugifyStr(tag)} tagName={tag} size="sm" />
-                  ))}
-                </ul>
-              )}
             </div>
           </li>
         ))}
