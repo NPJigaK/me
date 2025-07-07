@@ -38,7 +38,7 @@ export default async post =>
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
-                fontSize: 32,
+                fontSize: 48,
               },
               children: [
                 // { type: "span", props: { children: post.data.author } },
@@ -51,8 +51,8 @@ export default async post =>
                         type: "img",
                         props: {
                           src: "https://devkey.jp/favicon.svg",
-                          width: 32,
-                          height: 32,
+                          width: 48,
+                          height: 48,
                           style: { marginRight: 8 },
                           alt: "favicon",
                         },
