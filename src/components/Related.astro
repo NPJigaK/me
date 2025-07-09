@@ -2,6 +2,7 @@
 import AdSense from "./AdSense.astro";
 import rawSimilarities from "../assets/similarities.json";
 import path from "node:path";
+import { Image } from "astro:assets";
 
 interface RelatedPost {
   author: string;
@@ -61,11 +62,14 @@ const ADS_SLOT_ID = "5781165437";
           <li class="my-6">
             <div class="relative overflow-hidden rounded border border-border">
               <a href={getPostUrl(post)} class="block hover:opacity-90">
-                <img
+                <Image
                   src={getImageUrl(post)}
                   alt={post.title}
+                  width={720}
+                  height={405}
                   class="aspect-video w-full object-cover"
                   loading="lazy"
+                  format="webp"
                 />
               </a>
             </div>
